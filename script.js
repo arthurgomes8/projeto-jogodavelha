@@ -12,7 +12,14 @@ casa.forEach(function(celula) {
 
 function marcarCasa(event) {
     let casinhaClicada = event.target
+
+    //Verificação de Erro,se a casa ja estiver pintada,ele ja sai da função na hora
+     if (casinhaClicada.textContent !== "") {
+        return
+    }
+
     casinhaClicada.textContent = JogadorAtual
+
     //Alternar entre X e O para pintar as casas
     if (JogadorAtual=="X"){
         JogadorAtual="O"
