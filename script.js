@@ -31,9 +31,10 @@ function marcarCasa(event) {
 
     //Checador de Vitoria antes de trocar de turno
     if (checarVitoria() === true) {
-        turno.textContent = `O jogador ${JogadorAtual} VENCEU!`;
-        // impede que o jogo mude o turno para o próximo jogador!
-        return; 
+        window.alert(`O jogador ${JogadorAtual} VENCEU!`)
+        turno.textContent = `O jogador ${JogadorAtual} VENCEU!`
+        // impede que o jogo mude o turno para o próximo jogador
+        return
     }
 
     //Alternar entre X e O para pintar as casas
