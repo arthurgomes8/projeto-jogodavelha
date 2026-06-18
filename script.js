@@ -34,6 +34,7 @@ function marcarCasa(event) {
 }
 
 function ReiniciarJogo(){
+    //Da mesma maneira que usamos um forEach para colocar um eventlistener,agora usamos para limpar o texto de cada casinha
     casa.forEach(function(celula) {
         celula.textContent = ""
     });
